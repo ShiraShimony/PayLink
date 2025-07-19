@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Displays account name -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Displays account balance -->
+    <TextView
+        android:id="@+id/textViewReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance: "
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Transfer button -->
+    <Button
+        android:id="@+id/buttonTransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transfer"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Request button -->
+    <Button
+        android:id="@+id/buttonRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request"
+        android:layout_marginBottom="24dp" />
+
+       <TextView
+        android:id="@+id/textViewTransfers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Waiting transfers"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+    <!-- List of transfers -->
+    <ListView
+        android:id="@+id/listViewTransfers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>
